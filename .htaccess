@@ -1,0 +1,45 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+Options -Indexes
+
+ReWriteRule ^$  pages/list_company_review.php [NC,L]
+ReWriteRule ^login([/]?)$ pages/login.php [NC,L]
+
+
+# Company Reviews Start
+
+
+ReWriteRule ^company-reviews/add([/]?)$ pages/add_company_review.php [NC,L]
+ReWriteRule ^company-reviews/edit/([0-9]+)([/]?)$ pages/edit_company_review.php?_id=$1 [NC,L]
+
+ReWriteRule ^company-reviews/([a-z0-9\-]+)/([0-9]+)([/]?)$ pages/review.php?company_slug=$1&id=$2 [NC,L]
+
+ReWriteRule ^company-reviews/([a-z0-9\-]+)([/]?)$ pages/review.php?company_slug=$1 [NC,L]
+ReWriteRule ^company-reviews([/]?)$ pages/list_company_review.php [NC,L]
+
+
+# Company Reviews End
+
+## state to state pages url ##
+ReWriteRule ^state-to-state([/]?)$ pages/list-state-to-state.php [NC,L]
+ReWriteRule ^state-to-state/add([/]?)$ pages/add_state_to_state.php [NC,L]
+ReWriteRule ^state-to-state/edit/([0-9]+)([/]?)$ pages/edit_state_to_state.php?_id=$1 [NC,L]
+
+ReWriteRule ^form_qoute([/]?)$ pages/form_qoute.php [NC,L]
+
+ReWriteRule ^blogs([/]?)$ pages/blogs_list.php [NC,L]
+ReWriteRule ^blogs/add([/]?)$ pages/add_blogs.php [NC,L]
+ReWriteRule ^blogs/edit/([0-9]+)([/]?)$ pages/edit_blogs.php?_id=$1 [NC,L]
+
+
+ReWriteRule ^states([/]?)$ pages/states_list.php [NC,L]
+ReWriteRule ^states/add([/]?)$ pages/add_state.php [NC,L]
+ReWriteRule ^states/edit/([0-9]+)([/]?)$ pages/edit_state.php?_id=$1 [NC,L]
+
+ReWriteRule ^cars([/]?)$ pages/cars_list.php [NC,L]
+ReWriteRule ^cars/add([/]?)$ pages/add_car.php [NC,L]
+ReWriteRule ^cars/edit/([0-9]+)([/]?)$ pages/edit_car.php?_id=$1 [NC,L]
+
+ReWriteRule ^service([/]?)$ pages/services_list.php [NC,L]
+ReWriteRule ^service/add([/]?)$ pages/add_services.php [NC,L]
+ReWriteRule ^service/edit/([0-9]+)([/]?)$ pages/edit_services.php?_id=$1 [NC,L]

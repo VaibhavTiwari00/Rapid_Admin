@@ -1,0 +1,98 @@
+:root {
+    --slider-width: 240px;
+    --admin-header-height: 52px;
+}
+
+.left-slider {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: var(--slider-width);
+    background-color: var(--bg-gray-2);
+    opacity: 0.97;
+}
+
+.left-slider-heading {
+    background-color: var(--bg-yellow-1);
+    display: grid;
+    place-items: center;
+    height: var(--admin-header-height);
+}
+
+.left-slider-heading>p {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.menu-group-container {
+    width: 100%;
+    height: calc(100vh - var(--admin-header-height));
+    overflow-y: scroll;
+}
+
+.menu-group-container::-webkit-scrollbar {
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+.menu-group-container-heading {
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--text-white-2);
+    padding: 15px;
+    padding-bottom: 0;
+}
+
+.menu-group-container>.menu-group {
+    width: 100%;
+}
+
+.menu-group-container>.menu-group {
+    border-bottom: 1px solid var(--bg-gray-1);
+}
+
+.menu-group-container>.menu-group>li {
+    display: inline-flex;
+    justify-content: left;
+    align-items: center;
+    color: var(--text-white-1);
+    cursor: pointer;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+.menu-group-container>.menu-group>li:hover {
+    background-color: var(--bg-hover-1);
+}
+
+.menu-group-container>.menu-group>li>span {
+    margin-right: 7px;
+    font-size: 20px;
+}
+
+.header-top {
+    height: var(--admin-header-height);
+    border-bottom: 1px solid #00000026;
+    box-shadow: var(--box-shadow-1);
+    -webkit-box-shadow: var(--box-shadow-1);
+    -moz-box-shadow: var(--box-shadow-1);
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: calc(100% - var(--slider-width));
+}
+
+main {
+    position: fixed;
+    right: 0;
+    top: var(--admin-header-height);
+    height: calc(100vh - var(--admin-header-height));
+    width: calc(100vw - var(--slider-width));
+    overflow: auto;
+    background-color: var(--bg-white-2);
+    padding: 25px;
+}

@@ -1,0 +1,46 @@
+body {
+    background-color: aliceblue;
+}
+
+h3 {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    color: #ffd333;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+main {
+    width: 28%;
+    height: max-content;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.form-login>span {
+    margin-top: 30px;
+}
+
+.form-login>input {
+    margin-bottom: 1px;
+}
+
+.form-login > .btn-yellow-1 {
+    width:max-content;
+    margin: 10px 0;
+}
+
+
+@media screen and (max-width:1000px){
+    main {
+    width: 48%;}
+}
+
+@media screen and (max-width:800px){
+    main {
+    width: 88%;}
+}

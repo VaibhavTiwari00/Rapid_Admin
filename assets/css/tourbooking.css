@@ -1,0 +1,28 @@
+.table-box {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    height: calc(100vh - calc(var(--admin-header-height) + 120px));
+}
+
+.search-box {
+    flex: 0 1 auto;
+    padding: 10px;
+}
+
+.box-table {
+    flex: 1 1 auto;
+}
+
+.table-row {
+    grid-template-columns:  120px 120px 300px 100px 150px 150px 200px 120px 150px 120px 180px 150px 190px 150px 200px 170px 180px 170px 200px 250px;
+    width: max-content;
+}
+
+.table-row>div {
+    overflow: auto;
+}
+
+.table-row>div::-webkit-scrollbar {
+    display: none;
+}

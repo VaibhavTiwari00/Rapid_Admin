@@ -1,0 +1,41 @@
+.wi {
+    width: 20% !important;
+}
+
+.heading {
+    margin-top: 9vh !important;
+}
+
+.elemennt-2 {
+    width: 40% !important;
+}
+
+.item {
+    width: 35% !important;
+}
+
+.fonts i {
+    margin-left: -20px !important;
+}
+
+.sir-mid {
+    margin-left: 25px;
+}
+
+.add-category-form {
+    height: max-content;
+}
+
+.add-category-btn {
+    margin-top: 15px;
+}
+
+.list-form-container {
+    display: grid;
+    grid-template-columns: 70% 1fr;
+    grid-gap: 20px;
+}
+
+.pbut {
+    font-size: 13px;
+}

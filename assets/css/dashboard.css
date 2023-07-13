@@ -1,0 +1,22 @@
+.dashborad-main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 15px;
+}
+
+.report-box>p:first-child {
+    color: gray;
+}
+
+.report-box>p:nth-child(2) {
+    padding: 25px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.report-box>p:nth-child(3) {
+    font-size: 12px;
+    text-align: center;
+    color: gray;
+}

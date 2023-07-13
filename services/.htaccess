@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+Options -Indexes 
+
+
+ReWriteRule ^([a-zA-Z0-9\/_\-]+)$ $1.php [QSA,L]

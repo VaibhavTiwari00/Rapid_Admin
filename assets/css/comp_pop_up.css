@@ -1,0 +1,94 @@
+.pop-backgroud {
+  position: fixed;
+  top: -500%;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.856);
+  z-index: 99;
+  /* transition: 1s; */
+}
+
+.profile-details-section {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2% 5%;
+  width: 87%;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0 1px 3px #00000026;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  transition: 1s;
+  overflow: scroll;
+}
+
+.profile-details-heading {
+  width: 100%;
+  height: 65px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 20px;
+  border-bottom: 1px solid #000000;
+  padding-bottom: 10px;
+  padding-: 4%;
+}
+
+.profile-details-input {
+  padding: 2% 0;
+}
+
+.profile-details-heading > p {
+  font-weight: 500;
+
+  font-size: 30px;
+}
+
+.profile-details-heading > i {
+  cursor: pointer;
+  z-index: 5;
+}
+
+.profile-details-input-button {
+  justify-content: flex-end;
+}
+.img-section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 4%;
+}
+.img-section-child > img {
+  width: 100%;
+  height: 120px;
+}
+.img-name-div {
+  width: 100%;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 500px) {
+  .profile-details-section {
+    margin: 100px auto;
+    width: 80%;
+  }
+  .update-button {
+    margin-top: 20px;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0352fc;
+    padding: 6px 10px;
+    border-radius: 4px;
+  }
+}

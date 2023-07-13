@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wi {
+    width: 17% !important;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading {
+    margin-top: 9vh !important;
+}
+
+.elemennt-2 {
+    width: 30% !important;
+}
+
+.item {
+    width: 28% !important;
+}
+
+.fonts i {
+    margin-left: -40px !important;
+}
+
+.sir-mid {
+    margin-left: 25px;
+}
+
+.pbut {
+    color: black;
+    font-size: 16px;
+    font-weight: bolder;
+}

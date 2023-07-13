@@ -1,0 +1,50 @@
+
+.table-box {
+    display: flex;
+    padding: 0;
+    height: calc(100vh - calc(var(--admin-header-height) + 120px));
+}
+
+.search-box {
+    flex: 0 1 auto;
+}
+
+.blog_table{
+    width: 100%;
+}
+.blog_table tr{
+    height: 50px;
+}
+.blog_table thead{
+    background-color: #ff5722;
+    color: white;
+}
+.blog_table tbody tr{
+    text-align: center;
+}
+.blogs_tbody tr:nth-child(even){
+background-color: #eee;
+}
+button.view_btn{
+background-color: #ff5722;
+color: white;
+outline: none;
+border: none;
+padding: 8px;
+}
+button.view_btn a{
+    color: white;
+    text-decoration: none;
+}
+button.edit_btn{
+background-color: #3d464d;
+color: white;
+outline: none;
+border: none;
+padding: 8px;
+}
+button.edit_btn a{
+    color: white;
+    text-decoration: none;
+    
+}

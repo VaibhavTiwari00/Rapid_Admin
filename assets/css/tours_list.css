@@ -1,0 +1,24 @@
+.table-box {
+    display: flex;
+    padding: 0;
+    height: calc(100vh - calc(var(--admin-header-height) + 120px));
+}
+
+.search-box {
+    flex: 0 1 auto;
+}
+
+.box-table {
+    flex: 1 1 auto;
+}
+
+.table-row {
+    grid-template-columns: 255px 100px 100px 470px 190px 150px;
+    width: max-content;
+}
+
+.table-img {
+    height: 60px;
+    width: auto;
+    margin: 0 auto;
+}

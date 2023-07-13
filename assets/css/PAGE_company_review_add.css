@@ -1,0 +1,202 @@
+.ck-blurred,
+.ck-focused {
+    min-height: 300px;
+    max-height: 400px;
+    overflow-x: auto;
+}
+
+.form-heading {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 65% 1fr;
+    grid-gap: 20px;
+}
+
+section>div:first-child {
+    height: max-content;
+}
+
+section>div:nth-child(2)>div {
+    margin-bottom: 20px;
+}
+
+.check-box-p {
+    margin-top: 4%;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--bg-yellow-1);
+}
+
+textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 200px;
+    max-height: 200px;
+}
+
+.div-inline-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.div-inline-form>p {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.display-img>img {
+    width: 100%;
+}
+
+.size-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.size-div>.input-lable {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.gallery {
+    display: grid;
+    width: 100%;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(2, calc(50% - 5px));
+}
+
+.checkbox-container {
+    width: 100%;
+    border: 1px solid #242424c5;
+    list-style: none !important;
+    border-radius: 2px;
+    padding: 5px 8px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.checkbox-container>li {
+    list-style: none;
+    padding-right: 10px;
+}
+
+.messageCheckbox {
+    width: auto;
+}
+
+.gallery-item {
+    position: relative;
+}
+
+.gallery-item>img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.gallery-item>i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.gallery-item>i:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.adult-child-count {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+}
+
+.adult-child-count>.input-lable {
+    text-align: left;
+    width: 100%;
+}
+
+
+/* table css */
+
+.priceing_table {
+    margin-top: 10px;
+}
+
+.price_table>thead>tr>th {
+    background-color: var(--bg-yellow-1);
+    color: white;
+    border: 1px solid white;
+    padding: 4px 0;
+    font-weight: 400;
+}
+
+.price_table>tbody>tr {
+    border-collapse: none;
+    border-bottom: 1px solid gray;
+}
+
+.price_table>thead>tr>th {
+    padding: 5px 10px;
+}
+
+.price_table>tbody>tr>td {
+    border-bottom: 0.5px solid rgb(231, 231, 231);
+    border-right: 0.5px solid rgb(231, 231, 231);
+    text-align: center;
+}
+
+.price_table>tbody>tr>td>input {
+    border: 0;
+}
+
+
+/* .price_table>tbody>tr>td> .btn-yello-1{
+    height: 100% !important;
+} */
+
+.price_table>tbody>tr>td:first-child {
+    border-left: 0.5px solid rgb(231, 231, 231);
+}
+
+.tour-schedule {
+    margin-top: 15px;
+}
+
+.tour-schedule-item {
+    border: 1px solid #24242426;
+    padding: 8px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.tour-schedule-item>.input-lable {
+    margin-top: 5px;
+}
+
+.tour-schedule-item>.icon {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    cursor: pointer;
+}
+
+.tour-schedule-item>.icon-1 {
+    right: 37px;
+}
+
+.tour-schedule-item>.icon:hover {
+    color: red;
+}

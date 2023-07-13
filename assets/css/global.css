@@ -1,0 +1,221 @@
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-family: "Roboto", sans-serif;
+        box-sizing: border-box;
+        outline: none;
+    }
+
+    :root {
+        --bg-gray-1: #212529;
+        --bg-gray-2: #3d464d;
+        --bg-hover-1: #48525a;
+        --bg-yellow-1: #ff5722;
+        --bg-white-1: #fff;
+        --bg-white-2: #fff4f4;
+        --text-white-1: #fff;
+        --text-white-2: #8fa7b2;
+        --text-black-1: rgb(46, 46, 46);
+        --box-shadow-1: 0px 2px 3px 0px rgba(48, 48, 48, 0.69);
+    }
+
+
+    /* DON'T REMOVE THIS CLASS */
+
+    .toastme .toastme-close {
+        right: 5px !important;
+        top: 5px !important;
+    }
+
+
+    /* ====================================== */
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        overflow: hidden;
+    }
+
+
+    /* INPUT ELEMENTS STYLE */
+
+    input,
+    select,
+    textarea {
+        width: 100%;
+        border: 1px solid #24242426;
+        padding: 8px 5px;
+        font-size: 16px;
+    }
+
+    .input-lable {
+        font-size: 13px;
+        margin: 15px auto 5px auto;
+    }
+
+    .input-error {
+        font-size: 12px;
+        color: red;
+    }
+
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+
+    /* Track */
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+
+    /* Handle */
+
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+
+    /* Handle on hover */
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+
+    /* FORM HEADING */
+
+    .form-heading {
+        font-size: 17px;
+        font-weight: 500;
+        color: darkslategrey;
+    }
+
+
+    /* BOX DESIGNS */
+
+    .box-1 {
+        box-shadow: 0 1px 3px #00000026;
+        background-color: #fff;
+        padding: 15px;
+    }
+
+
+    /* BUTTON STYLES */
+
+    .btn-yellow-1,
+    .btn-gray-1 {
+        color: #212519;
+        background-color: #ff5722;
+        font-size: 15px;
+        padding: 5px 12px;
+        border: 1px solid transparent;
+        cursor: pointer;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .btn-yellow-1:hover {
+        background-color: #f1683f;
+    }
+
+    .btn-gray-1 {
+        background-color: #e6e8eb;
+    }
+
+    .btn-gray-1:hover {
+        background-color: #d9dbde;
+    }
+
+
+    /* SINGAL PAGE HEADER */
+
+    .page-header {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 10px;
+    }
+
+    .page-header>.page-header-breadcrumb {
+        grid-column: 1/-1;
+        display: inline-flex;
+        justify-content: flex-start;
+        color: #828f99;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .page-header>.page-header-breadcrumb>p {
+        margin: 0 5px;
+    }
+
+    .page-header>.page-header-heading {
+        font-size: 2em;
+        font-weight: 500;
+        color: var(--text-black-1);
+        margin: 5px 0;
+    }
+
+    .page-header>.page-header-btn-container {
+        display: inline-flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 8px;
+    }
+
+    .submit-button {
+        background-color: rgb(25, 90, 211);
+        width: 20%;
+        color: white;
+        height: 6vh;
+        /* border-radius: 21px; */
+        cursor: pointer;
+        margin-left: 18px;
+    }
+
+
+    /* INFO WIDGETS */
+
+    .info-widget {
+        border-radius: 2px;
+        padding: 3px 8px;
+        display: grid;
+        place-items: center;
+        color: white;
+        font-size: 13px;
+        cursor: pointer;
+    }
+
+    .warning {
+        background-color: red;
+    }
+
+    .success {
+        background-color: green;
+    }
+
+    .import {  
+        color: #212519;
+        background-color: #e6e8eb;
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .import:hover {
+        background-color: #d9dbde;
+    }
+
+    .heading-right>p>a {
+        text-decoration: none;
+    }
+
+    .import>a {
+        color: #212519;
+    }
